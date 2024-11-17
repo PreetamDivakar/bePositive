@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the body takes full height of the viewport */
+}
+
+main {
+    flex-grow: 1;  /* Allows the main content to grow and push the footer down */
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #a83232;
+}
+
+.logo-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.website-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #a83232;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #a83232;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #8b2828;
+}
+
+/* Form Section Styles */
+.form-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.form-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form-box h2 {
+    font-size: 28px;
+    color: #a83232;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.input-field label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-field input:focus {
+    border-color: #a83232;
+    outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #a83232;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #8b2828;
+}
+
+.signup-link, .login-link {
+    color: #a83232;
+    text-decoration: none;
+}
+
+.signup-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Contact Information in Footer */
+.contact-footer {
+    margin-top: 20px;
+}
+
+.contact-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    /* Adjust form layout for smaller screens */
+    .form-box {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+
+    .input-field label {
+        font-size: 14px;
+    }
+
+    .input-field input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-logo {
+        margin: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* For smaller devices like phones in portrait mode */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 15px;
+    }
+
+    .form-box h2 {
+        font-size: 22px;
+    }
+
+    .input-field input {
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .website-name {
+        font-size: 18px;
+    }
+}
